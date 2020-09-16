@@ -20,7 +20,7 @@ public class GlbSignUpTest {
      *
      */
 
-    @Test
+    @Test (groups = "glbtrade")
     public void test() {
         Driver.getDriver().get(ConfigurationReader.getProperty("glb_url"));//1.Step
         GlbSignUpPage glbSignUpPage = new GlbSignUpPage();
