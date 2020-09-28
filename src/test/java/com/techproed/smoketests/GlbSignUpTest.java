@@ -10,6 +10,8 @@ import org.testng.internal.Configuration;
 
 public class GlbSignUpTest {
 
+
+
     /*
      * 1. Adım : https://www.glbtrader.com/register-verified.html adresine gidelim
      * 2. Adım : GlbSignUpPage class'ından nesne üretip, webelementleri kullanalım.
@@ -22,7 +24,7 @@ public class GlbSignUpTest {
 
     @Test (groups = "glbtrade")
     public void test() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("glb_url"));//1.Step
+        Driver.getDriver().get(ConfigurationReader.getProperty("glb_login"));//1.Step
         GlbSignUpPage glbSignUpPage = new GlbSignUpPage();
         glbSignUpPage.emailBox.sendKeys(ConfigurationReader.getProperty("glb_email"));
         glbSignUpPage.nameBox.sendKeys(ConfigurationReader.getProperty("glb_name"));
